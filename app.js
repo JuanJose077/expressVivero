@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-const routerEmpleados = require('../proyecto-express/src/routes/empleados.js'); 
+const routerEmpleados = require('./proyecto-express/src/routes/empleados.js'); 
 const routerPlantas = require('../proyecto-express/src/routes/plantas.js'); 
 const routerAuth = require('./src/routes/auth.js'); // Nueva ruta de autenticación
 
