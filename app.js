@@ -13,7 +13,7 @@ const routerPlantas = require(path.join(__dirname, 'src', 'routes', 'plantas.js'
 const routerAuth = require(path.join(__dirname, 'src', 'routes', 'auth.js'));
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: *,
   credentials: true,
 }));
 app.use(express.json()); 
