@@ -9,8 +9,8 @@ const wss = new WebSocket.Server({ server });
 
 const path = require('path');
 const routerEmpleados = require(path.join(__dirname, 'src', 'routes', 'empleados.js'));
-const routerPlantas = require('../proyecto-express/src/routes/plantas.js'); 
-const routerAuth = require('./src/routes/auth.js'); // Nueva ruta de autenticación
+const routerPlantas = require(path.join(__dirname, 'src', 'routes', 'plantas.js'));
+const routerAuth = require(path.join(__dirname, 'src', 'routes', 'auth.js'));
 
 app.use(cors({
   origin: process.env.FRONTEND_URL || '*',
